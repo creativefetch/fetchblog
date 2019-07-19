@@ -1,21 +1,36 @@
 import React from 'react'
 
-const BlogHeader = () => {
-   
+// this component should take two props
+//     BLOG TITLE
+//     categories = DOGS CATS ETC.
+
+const BlogHeader = (props) => {
+   console.log(props)
     return (
 
         <div className="grid__col grid__col--3-of-3 mainBannerT1 positionShift">
             <div className="container no-background">
-                <img className="headerImg" src="/shop/2/standalone/hub/images/active-dog-games-head.jpg" alt="Header" />
+                
+                {/* Private Contentful image */}
+                <img className="headerImg" src={`https:${props.blogJSON.headerImage.fields.file.url}`} alt="Header" />
+
+                {/* git Stored image */}
+                {/* <img className="headerImg" src={`/shop/2/standalone/hub/images/${props.blogJSON.headerImage}.jpg`} alt="Header" /> */}
+
+                {/* Ocado contentful image */}
+                {/* <img className="headerImg" src={`{{${props.blogJSON.headerImage}}}`} alt="Header" /> */}
+
                     <div className="introHeadOuterT3">
                         <div className="introHeadT1">
 
                             <div className="section">
-                                DOGS
+                                {props.blogJSON.categories.map(element => {
+                                    return `${element} |`
+                                })}
 					        </div>
 
                             <div className="introHeadMainCopy">
-                                <h4>10 active dog games your family will love</h4>
+                                <h4>{props.blogJSON.blogTitle}</h4>
                             </div>
 
                         </div>
