@@ -46,7 +46,7 @@ class App extends React.Component {
     const blogRoutes = this.state.allEntriesJSON.map(element => {
       console.log(element)
       const blogTemplate = element.sys.contentType.sys.id
-      if(blogTemplate === "template1"){return(<Route path={`/${element.fields.url}`} key={element.sys.id} render={(props) => {console.log(props); return(<Template1 {...props} blogJson={element} />)}}/>)}
+      if(blogTemplate === "template1"){return(<Route path={`/${element.fields.url}`} key={element.sys.id} render={(props) => (<Template1 {...props} blogJson={element} />)} />)}
       if(blogTemplate === "template2"){return(<Route path={`/${element.fields.url}`} key={element.sys.id} render={(props) => (<Template2 {...props} blogJson={element} />)} />)}
       if(blogTemplate === "template3"){return(<Route path={`/${element.fields.url}`} key={element.sys.id} render={(props) => (<Template3 {...props} blogJson={element} />)} />)}
       if(blogTemplate === "template4"){return(<Route path={`/${element.fields.url}`} key={element.sys.id} render={(props) => (<Template4 {...props} blogJson={element} />)} />)}
@@ -63,7 +63,7 @@ class App extends React.Component {
           <Router>
             <Layout>
               <Switch>
-                <Route exact path="/" component={Home} />
+                <Route exact path="/" render={(props) => (<Home {...props} blogJson={this.state.allEntriesJSON} />)} />
                 {this.GenerateBlogUrls()}
                 <Route component={NotFound} />
               </Switch>

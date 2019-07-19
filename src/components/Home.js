@@ -1,17 +1,17 @@
 import React from 'react';
 import Layout from "./Layout/Layout";
 import BlogEntries from "./BlogEntries/BlogEntries";
-class Home extends React.Component {
+
+const Home = (props) => {
   
+console.log(props.blogJson)
 
 
-
-    render() {
       return (
         <div>
        
   
-            {/* <BlogEntries /> */}
+            <BlogEntries blogJson={props.blogJson}/>
 
          
   
@@ -19,6 +19,5 @@ class Home extends React.Component {
         </div>
       );
     }
-  }
   
   export default Home;

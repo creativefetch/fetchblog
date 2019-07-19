@@ -1,0 +1,3372 @@
+/*! Static Content Stylesheet
+  *
+ *  Index:
+ *  I.      Voucher
+ *  II.     Christmas
+ *  III.    Grid
+ *
+ */
+/*! Utils
+ *  *****
+ *  Various utility styles used across static content
+ */
+/* Full width layout, also removes gap between breadcrumb and content */
+
+body {
+    background-color: transparent;
+  }
+  
+  .grid {
+    list-style: none;
+    /*     margin-left: -20px; */
+  }
+  
+  .grid .grid__col--2-of-2, .grid .grid__col--3-of-3, .grid .grid__col--4-of-4, .grid .grid__col--5-of-5, .grid .grid__col--6-of-6, .grid .grid__col--8-of-8, .grid .grid__col--12-of-12 {
+    width: 100%;
+  }
+  
+  .grid .grid__col--1-of-2, .grid .grid__col--2-of-4, .grid .grid__col--3-of-6, .grid .grid__col--4-of-8, .grid .grid__col--6-of-12 {
+    width: 50%;
+  }
+  
+  .grid .grid__col--1-of-3, .grid .grid__col--2-of-6, .grid .grid__col--4-of-12 {
+    width: 33.33333%;
+  }
+  
+  .grid .grid__col--2-of-3, .grid .grid__col--4-of-6, .grid .grid__col--8-of-12 {
+    width: 66.66667%;
+  }
+  
+  .grid .grid__col--1-of-4, .grid .grid__col--2-of-8, .grid .grid__col--3-of-12 {
+    width: 25%;
+  }
+  
+  .grid .grid__col--3-of-4, .grid .grid__col--6-of-8, .grid .grid__col--9-of-12 {
+    width: 75%;
+  }
+  
+  .grid .grid__col--push-2-of-2, .grid .grid__col--push-3-of-3, .grid .grid__col--push-4-of-4, .grid .grid__col--push-5-of-5, .grid .grid__col--push-6-of-6, .grid .grid__col--push-8-of-8, .grid .grid__col--push-12-of-12 {
+    margin-left: 100%;
+  }
+  
+  .grid .grid__col--push-1-of-2, .grid .grid__col--push-2-of-4, .grid .grid__col--push-3-of-6, .grid .grid__col--push-4-of-8, .grid .grid__col--push-6-of-12 {
+    margin-left: 50%;
+  }
+  
+  .grid .grid__col--push-1-of-3, .grid .grid__col--push-2-of-6, .grid .grid__col--push-4-of-12 {
+    margin-left: 33.33333%;
+  }
+  
+  .grid .grid__col--push-2-of-3, .grid .grid__col--push-4-of-6, .grid .grid__col--push-8-of-12 {
+    margin-left: 66.66667%;
+  }
+  
+  .grid .grid__col--push-1-of-4, .grid .grid__col--push-2-of-8, .grid .grid__col--push-3-of-12 {
+    margin-left: 25%;
+  }
+  
+  .grid .grid__col--push-3-of-4, .grid .grid__col--push-6-of-8, .grid .grid__col--push-9-of-12 {
+    margin-left: 75%;
+  }
+  
+  .grid .grid__col--pull-2-of-2, .grid .grid__col--pull-3-of-3, .grid .grid__col--pull-4-of-4, .grid .grid__col--pull-5-of-5, .grid .grid__col--pull-6-of-6, .grid .grid__col--pull-8-of-8, .grid .grid__col--pull-12-of-12 {
+    margin-left: -100%;
+  }
+  
+  .grid .grid__col--pull-1-of-2, .grid .grid__col--pull-2-of-4, .grid .grid__col--pull-3-of-6, .grid .grid__col--pull-4-of-8, .grid .grid__col--pull-6-of-12 {
+    margin-left: -50%;
+  }
+  
+  .grid .grid__col--pull-1-of-3, .grid .grid__col--pull-2-of-6, .grid .grid__col--pull-4-of-12 {
+    margin-left: -33.33333%;
+  }
+  
+  .grid .grid__col--pull-2-of-3, .grid .grid__col--pull-4-of-6, .grid .grid__col--pull-8-of-12 {
+    margin-left: -66.66667%;
+  }
+  
+  .grid .grid__col--pull-1-of-4, .grid .grid__col--pull-2-of-8, .grid .grid__col--pull-3-of-12 {
+    margin-left: -25%;
+  }
+  
+  .grid .grid__col--pull-3-of-4, .grid .grid__col--pull-6-of-8, .grid .grid__col--pull-9-of-12 {
+    margin-left: -75%;
+  }
+  
+  .grid .grid__col--1-of-5 {
+    width: 20%;
+  }
+  
+  .grid .grid__col--push-1-of-5 {
+    margin-left: 20%;
+  }
+  
+  .grid .grid__col--pull-1-of-5 {
+    margin-left: -20%;
+  }
+  
+  .grid .grid__col--2-of-5 {
+    width: 40%;
+  }
+  
+  .grid .grid__col--push-2-of-5 {
+    margin-left: 40%;
+  }
+  
+  .grid .grid__col--pull-2-of-5 {
+    margin-left: -40%;
+  }
+  
+  .grid .grid__col--3-of-5 {
+    width: 60%;
+  }
+  
+  .grid .grid__col--push-3-of-5 {
+    margin-left: 60%;
+  }
+  
+  .grid .grid__col--pull-3-of-5 {
+    margin-left: -60%;
+  }
+  
+  .grid .grid__col--4-of-5 {
+    width: 80%;
+  }
+  
+  .grid .grid__col--push-4-of-5 {
+    margin-left: 80%;
+  }
+  
+  .grid .grid__col--pull-4-of-5 {
+    margin-left: -80%;
+  }
+  
+  .grid .grid__col--1-of-6 {
+    width: 16.66667%;
+  }
+  
+  .grid .grid__col--push-1-of-6 {
+    margin-left: 16.66667%;
+  }
+  
+  .grid .grid__col--pull-1-of-6 {
+    margin-left: -16.66667%;
+  }
+  
+  .grid .grid__col--5-of-6 {
+    width: 83.33333%;
+  }
+  
+  .grid .grid__col--push-5-of-6 {
+    margin-left: 83.33333%;
+  }
+  
+  .grid .grid__col--pull-5-of-6 {
+    margin-left: -83.33333%;
+  }
+  
+  .grid .grid__col--1-of-8 {
+    width: 12.5%;
+  }
+  
+  .grid .grid__col--push-1-of-8 {
+    margin-left: 12.5%;
+  }
+  
+  .grid .grid__col--pull-1-of-8 {
+    margin-left: -12.5%;
+  }
+  
+  .grid .grid__col--3-of-8 {
+    width: 37.5%;
+  }
+  
+  .grid .grid__col--push-3-of-8 {
+    margin-left: 37.5%;
+  }
+  
+  .grid .grid__col--pull-3-of-8 {
+    margin-left: -37.5%;
+  }
+  
+  .grid .grid__col--5-of-8 {
+    width: 62.5%;
+  }
+  
+  .grid .grid__col--push-5-of-8 {
+    margin-left: 62.5%;
+  }
+  
+  .grid .grid__col--pull-5-of-8 {
+    margin-left: -62.5%;
+  }
+  
+  .grid .grid__col--7-of-8 {
+    width: 87.5%;
+  }
+  
+  .grid .grid__col--push-7-of-8 {
+    margin-left: 87.5%;
+  }
+  
+  .grid .grid__col--pull-7-of-8 {
+    margin-left: -87.5%;
+  }
+  
+  .grid .grid__col--1-of-12 {
+    width: 8.33333%;
+  }
+  
+  .grid .grid__col--push-1-of-12 {
+    margin-left: 8.33333%;
+  }
+  
+  .grid .grid__col--pull-1-of-12 {
+    margin-left: -8.33333%;
+  }
+  
+  .grid .grid__col--2-of-12 {
+    width: 16.66667%;
+  }
+  
+  .grid .grid__col--push-2-of-12 {
+    margin-left: 16.66667%;
+  }
+  
+  .grid .grid__col--pull-2-of-12 {
+    margin-left: -16.66667%;
+  }
+  
+  .grid .grid__col--5-of-12 {
+    width: 41.66667%;
+  }
+  
+  .grid .grid__col--push-5-of-12 {
+    margin-left: 41.66667%;
+  }
+  
+  .grid .grid__col--pull-5-of-12 {
+    margin-left: -41.66667%;
+  }
+  
+  .grid .grid__col--7-of-12 {
+    width: 58.33333%;
+  }
+  
+  .grid .grid__col--push-7-of-12 {
+    margin-left: 58.33333%;
+  }
+  
+  .grid .grid__col--pull-7-of-12 {
+    margin-left: -58.33333%;
+  }
+  
+  .grid .grid__col--10-of-12 {
+    width: 83.33333%;
+  }
+  
+  .grid .grid__col--push-10-of-12 {
+    margin-left: 83.33333%;
+  }
+  
+  .grid .grid__col--pull-10-of-12 {
+    margin-left: -83.33333%;
+  }
+  
+  .grid .grid__col--11-of-12 {
+    width: 91.66667%;
+  }
+  
+  .grid .grid__col--push-11-of-12 {
+    margin-left: 91.66667%;
+  }
+  
+  .grid .grid__col--pull-11-of-12 {
+    margin-left: -91.66667%;
+  }
+  
+  .grid .grid__col {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: -.25em;
+    min-height: 1px;
+    padding-left: 20px;
+    vertical-align: top;
+    position: relative;
+  }
+  
+  .grid .grid__col.grid__col--none {
+    display: none;
+  }
+  
+  .grid .grid__col.no-padding {
+    padding-left: 0;
+  }
+  
+  @media (max-width: 700px) {
+    .grid .grid__col {
+      display: block;
+      margin-left: 0;
+      margin-right: 0;
+      width: auto;
+    }
+  }
+  
+  @media (max-width: 700px) and (min-width: 480px) {
+    .grid .grid__col[class*="grid__col--m-"] {
+      display: inline-block;
+      margin-right: -.24em;
+    }
+    .grid .grid__col.grid__col--m-1-of-2, .grid .grid__col.grid__col--m-2-of-4 {
+      width: 50%;
+    }
+    .grid .grid__col.grid__col--m-1-of-3 {
+      width: 33.33333%;
+    }
+    .grid .grid__col.grid__col--m-2-of-3 {
+      width: 66.66667%;
+    }
+    .grid .grid__col.grid__col--m-1-of-4 {
+      width: 25%;
+    }
+    .grid .grid__col.grid__col--m-3-of-4 {
+      width: 75%;
+    }
+    .grid .grid__col.grid__col--m-4-of-4 {
+      width: 100%;
+    }
+    .grid .grid__col.grid__col--m-none {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid .grid__col[class*="grid__col--s-"] {
+      display: inline-block;
+      margin-right: -.24em;
+    }
+    .grid .grid__col .no-padding-mobile {
+      padding-left: 0 !important;
+      margin-top: 15px !important;
+    }
+    .grid .grid__col.grid__col--s-1-of-2, .grid .grid__col.grid__col--s-2-of-4 {
+      width: 50%;
+    }
+    .grid .grid__col.grid__col--s-1-of-3 {
+      width: 33.33333%;
+    }
+    .grid .grid__col.grid__col--s-2-of-3 {
+      width: 66.66667%;
+    }
+    .grid .grid__col.grid__col--s-1-of-4 {
+      width: 25%;
+    }
+    .grid .grid__col.grid__col--s-3-of-4 {
+      width: 75%;
+    }
+    .grid .grid__col.grid__col--s-4-of-4 {
+      width: 100%;
+    }
+  }
+  
+  .grid .grid__col--centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .grid .grid__col--d-first {
+    float: left;
+  }
+  
+  .grid .grid__col--d-last {
+    float: right;
+  }
+  
+  .grid.grid--no-gutter {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .grid.grid--no-gutter > * {
+    padding-left: 0;
+  }
+  
+  .grid.grid--no-gutter .grid__col--span-all {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .grid .grid__col--ab {
+    vertical-align: bottom;
+  }
+  
+  .grid .grid__col--am {
+    vertical-align: middle;
+  }
+  
+  .grid .grid__col.grid__col--s-none {
+    display: none;
+  }
+  
+  .container {
+    background-color: #fff;
+    font: 200 14px/22px Helvetica, Arial, sans-serif;
+    color: #404040;
+    padding: 0 15px;
+    max-width:1170px;
+    margin-right:auto;
+    margin-left:auto;
+  }
+  
+  img {
+    width: auto;
+    margin: 0 0 20px;
+  }
+  
+  @media (max-width: 749px) {
+    img {
+      width: 100%;
+    }
+  }
+  
+  .respRow {
+    width: 100%;
+    display: block;
+  }
+  
+  /* ---------- /GRID ------------- */
+  /* ----------  typography (don't edit) ---------- */
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Trade Gothic", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #404040;
+    letter-spacing: -1px;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  h1, .h1 {
+    color: #667d33;
+    font-size: 36px;
+    line-height: 54px;
+    margin-top: 20px !important;
+  }
+  
+  h1 .small {
+    font-size: 20px;
+    display: block;
+  }
+  
+  h2, .h2 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  
+  h3, .h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  
+  h4, .h4 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  
+  h4, .h4 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  
+  h5, .h5 {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  
+  h6, .h6 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  
+  
+  
+  blockquote {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  
+  p {
+    color: #404040;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 200;
+  }
+  
+  p.lead {
+    font-size: 21px;
+    line-height: 27px;
+  }
+  
+  p.small {
+    color: #676767;
+    font-size: 11px;
+    line-height: 16px;
+  }
+  
+  p.expanded {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  h1, .h1 {
+    clear: both;
+    padding: 0 0 20px;
+    margin: 0;
+  }
+  
+  h2, .h2 {
+    padding: 30px 0 15px;
+    margin: 0;
+  }
+  
+  h3, .h3 {
+    clear: both;
+    padding: 24px 0 12px;
+    margin: 0;
+  }
+  
+  h4, .h4 {
+    padding: 10px 0 10px;
+    margin: 0;
+  }
+  
+  h5, .h5 {
+    padding: 14px 0 10px;
+    margin: 0;
+  }
+  
+  h6, .h6 {
+    padding: 12px 0 10px;
+    margin: 0;
+  }
+  
+  p {
+    padding: 10px 0 20px;
+    margin: 0;
+    max-width: 480px;
+  }
+  
+  p.lead {
+    padding: 21px 0 12px;
+    max-width: 720px;
+  }
+  
+  p.small {
+    padding: 10px 0;
+    margin: 0;
+    max-width: 370px;
+  }
+  
+  div.warning p {
+    margin: 0;
+    padding-bottom: 5px;
+    color: #e55f4c;
+  }
+  
+  div.warning h4 {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: #e55f4c;
+  }
+  
+  strong {
+    font-weight: 600;
+  }
+  
+  em, i {
+    font-style: italic;
+  }
+  
+  p > a {
+    text-decoration: underline;
+  }
+  
+  ol, ul {
+    list-style: none;
+    margin: 20px auto;
+    padding-left: 20px;
+  }
+  
+  li {
+    line-height: 21px;
+  }
+  
+  /* ----------  / ---------- */
+  /* ----------  (share) static custom styles ---------- */
+  .breadcrumb {
+    line-height: 2;
+    overflow: hidden;
+    padding: 5px;
+    font-family: 'Trade Gothic v2', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .breadcrumb > nav {
+    display: block;
+    margin: 0;
+    padding: 0 15px;
+    position: relative;
+  }
+  
+  .breadcrumb > nav > a {
+    color: #7d7d7d;
+    display: inline-block;
+  }
+  
+  .breadcrumb > nav > b {
+    display: inline-block;
+    font-weight: bold;
+  }
+  
+  .breadcrumb > nav span {
+    display: inline-block;
+  }
+  
+  .breadcrumb > nav .icon-breadcrumb {
+    margin: 0 10px;
+  }
+  
+  .breadcrumb > nav .icon-breadcrumb-close {
+    margin: 0 8px;
+  }
+  
+  .breadcrumb > nav > li:nth-last-child(-n+2) {
+    display: inline-block;
+  }
+  
+  .breadcrumb > nav > a:nth-last-child(-n+2) {
+    display: inline-block;
+  }
+  
+  .icon {
+    display: inline-block;
+    vertical-align: middle;
+    color: transparent;
+    font: 0/0 a;
+    text-shadow: none;
+    background-image: url("/shop/2/standalone/images/icons@2x.png");
+  }
+  
+  .icon-breadcrumb {
+    background-position: -50px 0;
+    width: 5px;
+    height: 7px;
+    background-size: 800px 600px;
+  }
+  
+  .icon-breadcrumb-close {
+    background-position: -100px -62px;
+    width: 25px;
+    height: 20px;
+    background-size: 1000px 750px;
+  }
+  
+  .side-nav h2 {
+    color: #667d33;
+    padding: 0;
+  }
+  
+  .pet-voice {
+    text-transform: uppercase;
+  }
+  
+  .color-change {
+    color: #FFFFFF;
+  }
+  
+  .primary {
+    background-color: #a3d049;
+    color: #4a793d;
+  }
+  
+  .clearfix {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .btn {
+    display: inline-block;
+    border: none;
+    background: #7d6854;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px 10px 10px 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Trade Gothic", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .btn:hover {
+    background: #907F6D;
+  }
+  
+  .btn span {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+  }
+  
+  .btn-light {
+    background: #f9f5f3;
+    color: #333;
+  }
+  
+  .btn-light:hover {
+    background: #F2EFEF;
+    color: #333;
+  }
+  
+  .highlighted {
+    color: #667d33;
+  }
+  
+  /* ----------  / ---------- */
+  @media (max-width: 480px) {
+    /*-- mobile --*/
+    .side {
+      display: none;
+    }
+    .breadcrumb {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 700px) and (min-width: 480px) {
+    /*-- tablet and desktop --*/
+    .side {
+      display: none;
+    }
+    .breadcrumb {
+      display: none;
+    }
+  }
+  
+  .side ul, .side li {
+    margin: 0;
+    line-height: 21px;
+    font-size: 13px;
+    padding: 0 0 5px 0;
+  }
+  
+  .no-change img {
+    width: auto;
+  }
+  
+  .h3 .mobile {
+    line-height: 28px;
+    padding-bottom: 20px;
+  }
+  
+  .circle li {
+    list-style: circle;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  
+  /* ----------  Mobile Typography ---------- */
+  .mobile h1 {
+    line-height: 38px;
+  }
+  
+  /* ----------  /Mobile Typography ---------- */
+  /* ----------  Typography for responsive---------- */
+  .title h1, .title h3 {
+    padding-bottom: 0;
+  }
+  
+  /* ----------  /Typography for responsive---------- */
+  /* ----------  Contact Us ---------- */
+  .contactBox {
+    /*    border: 1px dashed #dad0b9;
+          border-radius: 25px; */
+    height: auto;
+    padding: 20px 15px 15px 5px;
+    margin: 20px 10px 20px 20px;
+  }
+  
+  .contact-content {
+    text-align: center;
+    padding: 0;
+  }
+  
+  .contact-content span {
+    display: block;
+    line-height: 21px;
+  }
+  
+  .contact-content span span {
+    display: block;
+    line-height: 21px;
+  }
+  
+  .contact-content img {
+    width: auto;
+  }
+      .insuranceContact {
+          border-top: 1px solid black;
+          padding-top:20px;
+          margin-top: 10px;
+          width: 100%;
+      }
+  
+  
+  @media (max-width: 700px) {
+    .contact-content {
+      display: block;
+      text-align: left;
+    }
+      .contactImg img {
+          display: none;
+      }
+      .contactImg {
+          padding-left: 0 !important; 
+  }
+  }
+  
+  .no-background {
+    background-color: transparent;
+    position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  
+  .white {
+    color: white;
+  }
+  
+  .white p {
+    color: white;
+  }
+  /* ----------  /Contact Us ---------- */
+  
+  .recycling .grid__col p, .returns .grid__col p {
+    max-width: 100%;
+  }
+  
+  /* ---------- RECYCLING ---------- */
+  
+  .recycling .electricals {
+    margin-left: 20px;
+    padding: 0 20px;
+    background-color: #f9f7f0;
+    border: 1px dashed #eae0ca;
+    border-radius: 3px;
+  }
+  
+  /* ---------- RECYCLING END ---------- */
+  
+  .grid.pet-advice {
+    margin-bottom: 20px;
+  }
+  /* ----------  Delivery & Returns ---------- */
+  @media (max-width: 699px) {
+    .returnsBlock.small {
+      margin-top: 0;
+      display: block;
+    }
+    .returnsBlock {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 700px) {
+    .returnsBlock.small {
+      margin-top: 0;
+      display: none;
+    }
+    .returnsBlock {
+      display: block;
+    }
+  }
+  
+  .returnsBlock {
+    background-color: #f9f7f0;
+    border: 1px dashed #eae0ca;
+    border-radius: 3px;
+    height: auto;
+    padding: 20px;
+    margin: 0 0 20px 20px;
+  }
+  
+  .returnsBlock h2 {
+    text-transform: uppercase;
+    padding: 0;
+  }
+  
+  .returns .image {
+        height: 140px;
+  }
+  
+  /* ----------  /Delivery & Returns ---------- */
+  /* ----------  Veteinary Medicines ---------- */
+  .vet-banner img {
+    width: auto;
+    padding-top: 10px;
+  }
+  
+  .vet-left img {
+    width: auto;
+    margin-top: 20px;
+  }
+  
+  .vet-middle img {
+    width: auto;
+    margin-top: 20px;
+  }
+  
+  .vet-last img {
+    width: auto;
+    margin-top: 20px;
+  }
+  
+  .vet-left p, .vet-middle p, .vet-last p {
+    padding-top: 20px;
+  }
+  
+  /* ----------  /Veteinary Medicines ---------- */
+  /* ----------  Terms for Crufts, Hall of Fame ---------- */
+  .marketing h1 {
+    width: 85%;
+    line-height: 38px;
+  }
+  
+  /* ----------  /Terms for Crufts, Hall of Fame ---------- */
+  /* ----------  Paypal (new code) ---------- */
+  .paypal {
+    margin-top: 20px;
+  }
+  
+  .paypalHeader h1 {
+    line-height: 42px;
+    padding-bottom: 0;
+  }
+  
+  .paypalBox {
+    background-color: #3d6a29;
+    height: 245px;
+    text-align: center;
+    padding: 20px;
+    margin: 0 10px 20px 0;
+  }
+  
+  .paypal-logo img {
+    width: auto;
+  }
+  
+  .paypalBox img {
+    margin: 0;
+    width: 55px;
+    height: 55px;
+  }
+  
+  .paypalBox p {
+    color: #ffffff;
+    max-width: 700px;
+    height: 80px;
+  }
+  
+  .btn.white {
+    background-color: #ffffff;
+  }
+  
+  /* ----------  /Paypal (new code)---------- */
+  
+  /* ---------  Pet Boutique ---------- */
+  
+  @import url('https://fonts.googleapis.com/css?family=Cinzel');
+  
+  .boutique-navigation {
+    line-height: 27px;
+    font-size: 12px;
+    padding: 15px 15px 0 0;
+  }
+  
+  .boutique-navigation ul {
+    padding-left: 20px;
+    margin-top: 0;
+    margin-left: -20px;
+  }
+  
+  .boutique-navigation h3 {
+    font-weight: 600;
+    padding-top: 0;
+  }
+  
+  .boutique {
+    margin-left: -20px;
+  }
+  
+  .grid .cat-container {
+    height: 280px;
+    margin-bottom: 20px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .boutique .mainBannerT1 {
+    height:430px;
+    background-color:#edebe6;
+    padding-left:0px !important;
+    z-index:0;
+    position: relative;
+  }
+  @media (max-width: 480px) { 
+    .boutique .mainBannerT1 {
+      margin-bottom: 20px !important;
+    }
+  }
+  
+      
+  .boutique .introHeadMainCopy {
+    padding-top:50px;
+    padding-left: 0px;
+    padding-right: 20px;
+    font-family: 'Cinzel', serif;
+    font-size:35px;
+    font-weight: normal;
+    line-height: 1;
+    color:#a99f97;
+    }
+    @media (max-width: 1200px) { 
+      .boutique .introHeadMainCopy {
+        padding-left: 20px
+      }
+    }
+    @media (max-width: 700px) { 
+      .boutique .introHeadMainCopy {
+        font-size:25px;
+        padding-top: 50px;
+      }
+    }
+    @media (max-width: 480px) { 
+      .boutique .introHeadMainCopy {
+        font-size:25px;
+        padding-top: 65px;
+      }
+    }
+  
+  .boutique .introHeadMainCopy h4 {
+    font-size: 65px;
+    font-family: 'Cinzel', serif;
+    color:#a99f97;
+    font-weight: normal;
+  }
+    @media (max-width: 700px) { 
+      .boutique .introHeadMainCopy h4 {
+        font-size: 50px;
+      }
+    }
+    @media (max-width: 480px) { 
+      .boutique .introHeadMainCopy h4 {
+        font-size:40px;
+      }
+    }
+  
+  .boutique .heroBg {
+    background-image:url(/shop/2/standalone/images/boutique/boutique-hero.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+  }
+  
+  
+  @media (max-width: 950px) and (min-width: 768px) {
+    .boutique .positionShift {
+      background-position:right -920px center;
+    }
+  }
+  @media (max-width: 767px) {
+    .boutique .positionShift {
+      background-position:-500px;
+    }
+  }
+  
+  .boutique .introHeadOuterT3 {
+    width: 100%;
+    max-width: 1170px;
+    float: left;
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .boutique .introHeadT1 {
+    height: 430px;
+    background-color: transparent;
+    padding: 15px;
+    z-index: 3;
+    position: relative;
+  }
+  
+  .boutique .introHeadT1 img {
+    width: 220px;
+    height: auto;
+    margin: 50px 0 0 0;
+    display: block;
+  }
+    @media (max-width: 480px) { 
+      .boutique .introHeadT1 img {
+        width: 180px;
+        margin: 40px 0 0 0;
+      }
+    }
+  
+  
+  .boutique.btn {    
+    background: rgba(245, 243, 246, 0.9);
+    color: rgb(94, 64, 54);
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 0px;
+    margin: 0;
+  }
+    @media (max-width: 1200px) { 
+      .boutique.btn {
+        font-size: 15px;
+      }
+    }
+    @media (max-width: 480px) { 
+      .boutique.btn {
+        font-size: 20px;
+      }
+    }
+  
+  .boutique.btn:hover {
+    background: rgba(245, 243, 246, 1);
+    text-decoration: none;
+  }
+  
+  .boutique-brand-logos {
+    border: 1px solid #edebe6;
+    overflow: visible;
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto; 
+    padding: 20px 20px 0 20px;
+    text-align: justify;
+  }
+  
+  .boutique-brand-logos img {
+    margin-bottom: -6px;
+    width: 23%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    opacity: 0.8;
+    display: inline-block;
+  }
+  
+  .boutique-brand-logos img:hover {
+    opacity: 1;
+  }
+  
+  .stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+  }
+  
+  .boutique-cat1 {
+    background: url("/shop/2/standalone/images/boutique/boutique-DogBeds.jpg") no-repeat center top;
+  }
+  
+  .boutique-cat2 {
+    background: url("/shop/2/standalone/images/boutique/boutique-DogApparel.jpg") no-repeat center top;
+  
+  }
+  
+  .boutique-cat3 {
+    background: url("/shop/2/standalone/images/boutique/boutique-DogToys.jpg") no-repeat center top;
+  
+  }
+  
+  .boutique-cat4 {
+    background: url("/shop/2/standalone/images/boutique/boutique-DogBowls.jpg") no-repeat center top;
+  
+  }
+  
+  .boutique-cat5 {
+    background: url("/shop/2/standalone/images/boutique/boutique-DogPampering.jpg") no-repeat center top;
+  
+  }
+  
+  .boutique-cat6 {
+    background: url("/shop/2/standalone/images/boutique/boutique-DogLeads.jpg") no-repeat center top;
+  
+  }
+  
+  .boutique-cat7 {
+    background: url("/shop/2/standalone/images/boutique/boutique-DogTreats.jpg") no-repeat center top;
+  
+  }
+  
+  .boutique-cat8 {
+    background: url("/shop/2/standalone/images/boutique/boutique-DogSupliments.jpg") no-repeat center top;
+  
+  }
+  
+  .boutique-cat9 {
+    background: url("/shop/2/standalone/images/boutique/boutique-PetLovers.jpg") no-repeat center top;
+  }
+  
+  @media all and (min-width: 481px) {
+    .boutique .no-padding-left{
+      padding-left: 0;
+    }
+  }
+  
+  @media (max-width: 699px) {
+    .boutique-navigation {
+      display: none;
+    }
+  }
+  
+  
+  @media all and (max-width: 480px) {
+    .boutique .grid__col:first-child {
+      padding-left: 20px;
+    }
+  
+    .boutique-brand-logos {
+      display: none;
+    }
+  
+  }
+  
+  /* ---------  /Pet Boutique  ---------- */
+  .static * {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .static .layout-full {
+    margin: -20px -20px 0;
+  }
+  
+  .static h6 {
+    font: 700 1.4em "Trade Gothic", "Arial", sans-serif;
+    margin: 5px 0;
+    -webkit-font-smoothing: antialiased;
+    color: #687D33;
+  }
+  
+  .static img {
+    border: 0;
+    margin: 0 0 10px;
+  }
+  
+  .btn {
+    background-color: #fff;
+    background-image: none;
+    border: none;
+    border-radius: 3px;
+    color: #333;
+    cursor: pointer;
+    font-family: "Trade Gothic",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+    margin-bottom: 0;
+    outline: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .static .btn:hover {
+    text-decoration: none;
+  }
+  
+  .static .btn-secondary {
+    background-color: #7d6652;
+    color: #fff;
+    font-family: "Trade Gothic",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+    margin-bottom: 0;
+    outline: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .btn-tertiary {
+    background-color: #c2003d;
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .static .btn-secondary:hover {
+    background-color: #645141;
+  }
+  
+  /*! Fonts */
+  .static-h2,
+  h2 {
+    font: 500 2.2em "Trade Gothic", "Arial", "sans-serif";
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1.2;
+    margin: 0 0 10px;
+    -webkit-font-smoothing: antialiased;
+    color: #687D33;
+  }
+  
+  .static-h3,
+  h3 {
+    font: 500 2em "Trade Gothic", "Arial", "sans-serif";
+    -webkit-font-smoothing: antialiased;
+    color: #687D33;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1.2;
+    margin: 0;
+  }
+  
+  .static-h4,
+  h4 {
+    font: 500 1.6em "Trade Gothic", "Arial", "sans-serif";
+    -webkit-font-smoothing: antialiased;
+    color: #687D33;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1.2;
+  }
+  
+  .static-navigation h4 {
+    font: 500 1.6em "Trade Gothic", "Arial", "sans-serif";
+    -webkit-font-smoothing: antialiased;
+    color: #687D33;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1.2;
+  }
+  
+  .static #intro-text p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: #666666;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .static #intro-text {
+    margin-bottom: 20px;
+  }
+  
+  /*! Sidebar */
+  .sidebar {
+    width: 100%;
+    float: left;
+    line-height: 27px;
+    font-size: 12px;
+    padding: 15px 0 0 15px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .sidebar:before {
+    content: '';
+    position: absolute;
+    display: block;
+    border-left: 1px dashed #f2ecdf;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  .sidebar:after {
+    content: '';
+    position: absolute;
+    display: block;
+    border-left: 1px dashed #c9c9c9;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 1px;
+    width: 100%;
+    z-index: -2;
+  }
+  
+  .sidebar p {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #656565;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul {
+    padding-left: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #656565;
+    font-size: 12px;
+    line-height: 18px;
+    list-style-type: disc;
+  }
+  
+  .sidebar h6 {
+    color: #333;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-two {
+    background-color: #F9F7F0;
+    width: 100%;
+    float: left;
+    font-size: 12px;
+    padding: 0 15px 10px 15px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .sidebar-two p {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #656565;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-two ul {
+    padding-left: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    list-style-type: disc;
+    color: #656565;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  
+  .sidebar-two h4 {
+    font: 700 1.4em "Trade Gothic", "Arial", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #687D33;
+    margin: 10px 0;
+  }
+  
+  .sidebar-two h2 {
+    font: 700 2.2em "Trade Gothic", "Arial", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #687D33;
+    margin: 10px 0;
+  }
+  
+  .static-navigation {
+    width: 100%;
+    float: left;
+    line-height: 27px;
+    font-size: 12px;
+    padding: 15px 15px 0 0;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .static-navigation:before {
+    content: '';
+    position: absolute;
+    display: block;
+    border-right: 1px dashed #f2ecdf;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  .static-navigation:after {
+    content: '';
+    position: absolute;
+    display: block;
+    border-right: 1px dashed #c9c9c9;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 1px;
+    width: 100%;
+    z-index: -2;
+  }
+  
+  .navigation-jump {
+    line-height: 3;
+  }
+  
+  
+  /* ============================================== */
+  /* ===============  ABOUT PAGE  ================= */
+  /* ============================================== */
+    //   Made june 2019
+
+  /* HEADER */
+  .about__header {
+  
+    background: #9AC621;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about__title {
+  width: 100%;
+    font-family: "Trade Gothic", "Arial", "sans-serif";
+    -webkit-font-smoothing: antialiased;
+    color: #3D6A29;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    letter-spacing: -1px;
+    font-size: 38px;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .about__mainimg {
+  width: 100%;
+  position: relative;
+  top: 20px;
+  /* with position relative and top allows you to move the image as neccessary */
+  }
+  
+  .about__mainimg img{
+    margin: 0;
+    /* resets the margin bottom set on all images */
+    }
+  
+  
+  
+  /* ABOUT CONTENT */
+  .about__intro {
+  display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about__introimg {
+  width: 100%;
+  order: 2;
+  margin: 0 10px;
+  }
+  
+  .about__introimg img {
+    width: 100%;
+    margin: 0;
+    }
+  
+  .about__introcopy {
+  width: 100%;
+  order: 1;
+    padding: 10px;
+    max-width: 650px;
+  }
+  
+  .about__introcopy p{
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 700px;
+  }
+  
+  /* CTA BUTTONS */
+  
+  .about__cta-btns {
+    width: 100%;
+      order: 3;
+      flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  }
+  
+  .about__cta-btn {
+    width: 100%;
+    text-align: center;
+    color: white;
+    background: #3D6A29;
+    margin: 5px 0px;
+    padding: 5px;
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+  
+  @media only screen and (min-width:480px) {
+  
+  .about__title_container {
+    position: relative;
+    left: 20px;
+    width: 60%;
+  }
+  
+  .about__title {
+    text-align: left;
+    font-size: 35px
+   }
+  
+  .about__mainimg {
+  width: 40%;
+  
+  }
+  
+  .about__mainimg img{
+    width: 100%;
+    margin: 0;
+    }
+    
+  
+  .about__introimg {
+  width: 30%;
+  order: 1;
+  margin: 0;
+  }
+  
+  .about__introcopy {
+  width: 70%;
+  order: 2;
+  }
+  
+  .about__cta-btn {
+  width:30%;
+  }
+  
+  }
+  
+  @media only screen and (min-width:600px) {
+    .about__title {
+      font-size:45px;
+    }
+  }
+  
+  
+  @media only screen and (min-width:767px) {
+  
+    .about__title_container {
+      width: 60%;
+      left: 50px;
+    }
+  
+  .about__title {
+    font-size:60px;
+  }
+  
+  .about__mainimg {
+    width: 40%;
+    top: 30px;
+    }
+  
+  }
+  @media only screen and (min-width:991px) {
+    .about__title {
+      font-size:75px;
+    }
+  }
+  
+/* ============================================== */
+/* ============================================== */
+/* ============================================== */
+  
+
+  .layout-grid {
+    margin: 0 0 20px 0;
+  }
+  
+  .layout-grid:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
+  .layout-col-01 {
+    width: 8.33%;
+  }
+  
+  .layout-col-02 {
+    width: 16.66%;
+  }
+  
+  .layout-col-03 {
+    width: 25%;
+  }
+  
+  .layout-col-04 {
+    width: 33.33%;
+  }
+  
+  .layout-col-05 {
+    width: 41.66%;
+  }
+  
+  .layout-col-06 {
+    width: 50%;
+  }
+  
+  .layout-col-07 {
+    width: 58.33%;
+  }
+  
+  .layout-col-08 {
+    width: 66.66%;
+  }
+  
+  .layout-col-09 {
+    width: 75%;
+  }
+  
+  .layout-col-10 {
+    width: 83.33%;
+  }
+  
+  .layout-col-11 {
+    width: 91.66%;
+  }
+  
+  .layout-col-12 {
+    width: 100%;
+  }
+  
+  .layout-col-01,
+  .layout-col-02,
+  .layout-col-03,
+  .layout-col-04,
+  .layout-col-05,
+  .layout-col-06,
+  .layout-col-07,
+  .layout-col-08,
+  .layout-col-09,
+  .layout-col-10,
+  .layout-col-11,
+  .layout-col-12 {
+    float: left;
+    padding-right: 20px;
+    position: relative;
+  }
+  
+  .layout-col-last {
+    padding-right: 0;
+  }
+  
+
+
+  /* ---------  /BRANDED VOUCHERS - ROYAL CANIN ---------- */
+  
+  /* ---------  BRANDED VOUCHERS - TRUSTED HOUSE SITTERS ---------- */
+  .voucher-trusted-house-sitters p {
+    text-transform: none !important;
+  }
+  /* ---------  /BRANDED VOUCHERS - TRUSTED HOUSE SITTERS ---------- */
+  
+  /* ---------  /BRANDED VOUCHERS  ---------- */
+  
+  
+  /* ---------  NEW GUIDES  ---------- */
+  .adviceHeader {
+    height: auto;
+    padding: 20px 450px 20px 20px;
+    font-family: "Trade Gothic", "Helvetica", Sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 74px;
+    line-height: 70px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    // background-image: url(shop/2/standalone/guides/images/travel-zylkene/ZYLKENE-banner_03.jpg);
+    background-repeat: no-repeat;
+  }
+  
+  .adviceHeader h1 {
+    font-family: "Trade Gothic", "Helvetica", Sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 74px;
+    line-height: 70px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+  
+  .adviceHeader h2 {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .zylkene_copy {
+    font-size: 14px;
+    line-height: 20px;
+    color: #5b5b5b;
+    text-align: left;
+  }
+  
+  .zylkene_copy_travel {
+    font-size: 14px;
+    line-height: 20px;
+    color: #5b5b5b;
+    text-align: left;
+    padding: 15px;
+  }
+  
+  .zylkene h3 {
+    font-size: 20px;
+    color: #826d5a;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  
+  
+  .zylkene h5 {
+    font-family: "Trade Gothic", "Helvetica", Sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+    color: #5b5b5b;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  .solidline {
+    top: 0px;
+    font-family: "Trade Gothic", "Helvetica", Sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 25px;
+    color: #826d5a;
+    text-align: left;
+    margin: 0px;
+    padding: 0px 2px 2px 3px;
+    border-width: 2px;
+    border-bottom-width: 2px;
+    border-bottom-color: #cacaca;
+    border-bottom-style: solid;
+    width: 100%;
+  }
+  
+  .zylkene_mainvid {
+    height: 163px;
+    text-align: center;
+    font-size: 14px;
+    color: #000000;
+    padding: 15px;
+    line-height: 20px;
+  }
+  
+  .zylkene_colour_bg {
+    background-color: #f0e9cd;
+    border: #cacaca thin solid;
+  }
+  
+  @media (max-width: 480px) {
+    .adviceHeader {
+      height: 270px;
+      padding: 0 40px 0 0;
+      color: #ffffff;
+      text-transform: uppercase;
+    //   background-image: url(shop/2/standalone/guides/images/travel-zylkene/ZYLKENE-banner_03.jpg);
+      background-repeat: no-repeat;
+      background-size: 180%;
+      background-position-x: 23%;
+    }
+    .adviceHeader h1 {
+      font-family: "Trade Gothic", "Helvetica", Sans-serif;
+      -webkit-font-smoothing: antialiased;
+      font-size: 40px;
+      padding-top: 10px;
+      line-height: 35px;
+      font-weight: bold;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+      margin-left: -10px;
+    }
+    .adviceHeader h2 {
+      font-size: 15px;
+      color: #ffffff;
+      font-weight: bold;
+      padding-top: 0;
+      margin-left: -10px;
+    }
+  }
+  
+  .nav {
+    background-color: #f2eeed;
+    border-bottom: 2px solid #ece6e4;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 20px 0 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  .nav:hover {
+    box-shadow: 0 5px 10px 0 #c4c4c4;
+  }
+  
+  .nav:hover .nav__list {
+    display: block;
+  }
+  
+  .nav:after {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid rgba(119, 119, 119, 0.26);
+    content: "";
+    display: block;
+    height: 0;
+    position: absolute;
+    top: 19px;
+    right: 20px;
+    width: 0;
+  }
+  
+  @media (min-width: 992px) {
+    .nav:after {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .nav {
+      background: none;
+      border-bottom: none;
+      cursor: default;
+      margin: 0 10px 0 0;
+      padding: 10px 15px;
+    }
+    .nav:hover {
+      box-shadow: none;
+    }
+  }
+  
+  .nav__title {
+    display: none;
+  }
+  
+  @media (min-width: 992px) {
+    .nav__title {
+      color: #e55f52;
+      display: block;
+      padding-bottom: 0;
+    }
+  }
+  
+  h3.nav__section {
+    font-family: helvetica, arial, sans-serif;
+    font-size: 14px;
+    padding: 7px 12px;
+  }
+  
+  @media (min-width: 992px) {
+    h3.nav__section {
+      display: none;
+      padding: 18px 0 10px;
+    }
+  }
+  
+  .nav__list {
+    background-color: #fff;
+    box-shadow: 0 5px 10px 0 #c4c4c4;
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .nav__list:hover {
+    display: block;
+  }
+  
+  @media (min-width: 992px) {
+    .nav__list {
+      background: none;
+      box-shadow: none;
+      display: block;
+      padding-right: 20px;
+    }
+  }
+  
+  li.nav__list-item {
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    padding: 14px 12px;
+  }
+  
+  li.nav__list-item:hover {
+    background-color: #f2eeed;
+    text-decoration: none;
+  }
+  
+  @media (min-width: 992px) {
+    li.nav__list-item {
+      font-size: 12px;
+      padding: 6px 5px;
+    }
+  }
+  
+  li.nav__list-item > a {
+    display: block;
+  }
+  
+  li.nav__list-item > a:hover {
+    text-decoration: none;
+  }
+  
+  .grid .grid__col--align-bottom {
+    vertical-align: bottom;
+  }
+  
+  .grid--top {
+    margin-top: 20px;
+  }
+  
+  @media (min-width: 701px) {
+    .grid--top {
+      margin-top: 0;
+    }
+  }
+  
+  @media (max-width: 992px) and (min-width: 701px) {
+    .grid .grid__col[class*="grid__col--l-"] {
+      display: inline-block;
+      margin-right: -.24em;
+    }
+    .grid .grid__col.padding-mobile {
+      padding-left: 20px;
+    }
+    .grid .grid__col.grid__col--l-1-of-2,
+    .grid .grid__col.grid__col--l-2-of-4 {
+      width: 50%;
+    }
+    .grid .grid__col.grid__col--l-1-of-3 {
+      width: 33.33333%;
+    }
+    .grid .grid__col.grid__col--l-2-of-3 {
+      width: 66.66667%;
+    }
+    .grid .grid__col.grid__col--l-1-of-4 {
+      width: 25%;
+    }
+    .grid .grid__col.grid__col--l-3-of-4 {
+      width: 75%;
+    }
+    .grid .grid__col.grid__col--l-4-of-4 {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 701px) {
+    .visible-l-block {
+      display: block !important;
+    }
+  }
+  
+  .grid__col .grid {
+    margin-left: -20px;
+  }
+  
+  @media (min-width: 701px) {
+    .grid__col .grid {
+      margin: inherit;
+    }
+    .grid__col .grid .grid__col {
+      margin-bottom: 20px;
+    }
+  }
+  
+  
+  .font--primary, .heading, .pet-advice.hero__title, .pet-advice.hero__strapline, .pet-advice.block-header__title, .pet-advice.feature-block__title, .pet-advice.feature-block__section-title, .pet-advice.block-header__strapline, .pet-advice.feature-block__section-description, .pet-advice.feature-block__strapline, .pet-advice.hero__dropdown, .pet-advice.block > span, .pet-advice.block > h4, .pet-advice.block--highlight > h3, .pet-advice.button, .pet-advice.brand-block__title, .pet-advice h5, .pet-advice h4 {
+    font-family: "Trade Gothic v2", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .heading, .pet-advice.hero__title, .pet-advice.hero__strapline, .pet-advice.block-header__title, .pet-advice.feature-block__title, .pet-advice.feature-block__section-title {
+    font-weight: 600;
+  }
+  
+  .grid__col:first-child {
+    padding-left: 0;
+  }
+  
+
+
+  
+  /* ---------  FETCH BLOG LANDING PAGE  ---------- */
+  
+  .container { width: 100%; margin: 0 auto; }
+  
+  #fetch-blog-main {
+    padding-bottom: 200px;
+  }
+  
+  /* Vet advice title*/
+  #blog-home h1 {
+    color: #3D6A00;
+    padding-top: 0;
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+    line-height: normal;
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-family: "Trade Gothic", Helvetica, Arial, sans-serif;
+  }
+  /* Container for all cards - full width flex*/
+  .card-center {
+    width: 90%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px auto 0;
+  }
+  /* Card transitions for filter */
+  .card-center .card {
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+  }
+  /* Card framework*/
+  .card {
+    width: 10%;
+    min-width: 250px;
+    float: none;
+    margin: 10px;
+    background: #F5F5F5;
+  }
+  /* Card image framework*/
+  .card-image { 
+    overflow: hidden; 
+    position: relative; 
+  }
+  .card-image img{ 
+    width: 100%;
+    margin: 0;
+  }
+  /* Card image transition */
+  .card-image .card-cover {
+    width: 100%;
+    height: 280px;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    transition: 0.2s;
+  }
+  /* Card image hover effect */
+  .card a:hover .card-image img {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 0.2s;
+  }
+  
+  .card a:hover .card-content {
+    text-decoration: underline solid #F5F5F5;
+  }
+  /* Card text frame */
+  .card-content { 
+    padding: 15px; 
+    font-family: "Trade Gothic", Helvetica, Arial, sans-serif;
+    color: #000000;
+    /* min-height: 200px; */
+  }
+  /* Card span text */
+  .card-content span {
+    padding: 0;
+    margin: 0 0 5px 0;
+    line-height: 18px;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  /* Card H5 text */
+  .card-content h5 { 
+    font-size: 24px; 
+    line-height: normal; 
+    padding-bottom: 15px; 
+    text-transform: uppercase;
+    padding: 5px 0 10px;
+  }
+  /* Card p text */
+  .card-content p {
+    width: 100%;
+    height: 32px;
+    font-size: 12px;
+    overflow: hidden !important;
+    line-height: normal;
+    font-weight: normal;
+    padding: 0;
+  }
+  /* Large breakpoint */
+  @media (max-width: 1199px) {
+  }
+  /* Medium breakpoint */
+  @media (max-width: 991px) {
+    .card-center {
+      width: 98%
+    }
+    .card {
+      width: 31.5%;
+      margin: 5px;
+      min-width: 0;
+    }
+  }
+  /* Small breakpoint */
+  @media (max-width: 767px) {
+    .card-center {
+      width: 100%;
+    }
+    .card {
+      width: 46%;
+      float: left;
+    }
+  }
+  /* Extra small breakpoint */
+  @media (max-width: 479px) {
+    .card {
+      width: 100%;
+      float: none;
+    }
+    .card-content {
+      min-height: 0;
+    }
+  }
+  
+  
+  /* ---------  FETCH BLOG LANDING PAGE - END ---------- */
+  
+  
+  /* ------------------------------------------------ */
+  /* ---------  FETCH BLOG FILTER FUNCTION ---------- */
+  /* ------------------------------------------------ */
+  
+  /* Order of the Filter Classes */
+  /* dogs cats small-animals wildlife */
+  
+  .fetch-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 40px;
+  }
+  
+  input[name="filter"] {
+      display:none;
+  }
+  .fetch-filter label {
+    color: rgb(51, 51, 1);
+    cursor: pointer;
+    margin: 10px 15px;
+    font-family: "Trade Gothic", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  @media (min-width: 768px) {
+    .fetch-filter label {
+      font-size: 24px;
+    }
+  }
+  
+  /* Filter Label Hoover */
+  .fetch-filter label:hover{
+    border-bottom: 2px solid rgb(61, 106, 0);
+  }
+  
+  /* whichever cards are showing. its underlined */
+  #reset:checked ~ .fetch-filter .reset,
+  #dogs:checked ~ .fetch-filter .dogs,
+  #cats:checked ~ .fetch-filter .cats,
+  #small-animals:checked ~ .fetch-filter .small-animals,
+  #wildlife:checked ~ .fetch-filter .wildlife,
+  #vet-advice:checked ~ .fetch-filter .vet-advice {
+    border-bottom: 2px solid rgb(61, 106, 0);
+  }
+  
+  /* Dogs Checked/Clicked */
+  #dogs:checked ~ .card-center .cats,
+  #dogs:checked ~ .card-center .small-animals,
+  #dogs:checked ~ .card-center .wildlife,
+  #dogs:checked ~ .card-center .cat-vet,
+  #dogs:checked ~ .card-center .small-vet,
+  #dogs:checked ~ .card-center .small-wild,
+  /* Cats check */
+  #cats:checked ~ .card-center .dogs,
+  #cats:checked ~ .card-center .small-animals,
+  #cats:checked ~ .card-center .wildlife,
+  #cats:checked ~ .card-center .dog-vet,
+  #cats:checked ~ .card-center .small-vet,
+  #cats:checked ~ .card-center .small-wild,
+  /* Small animals check */
+  #small-animals:checked ~ .card-center .dogs,
+  #small-animals:checked ~ .card-center .cats,
+  #small-animals:checked ~ .card-center .wildlife,
+  #small-animals:checked ~ .card-center .dog-cat,
+  #small-animals:checked ~ .card-center .dog-cat-wild,
+  #small-animals:checked ~ .card-center .dog-vet,
+  #small-animals:checked ~ .card-center .cat-vet,
+  #small-animals:checked ~ .card-center .dog-cat-vet,
+  #small-animals:checked ~ .card-center .dog-cat-wild,
+  /* Wildlife check */
+  #wildlife:checked ~ .card-center .dogs,
+  #wildlife:checked ~ .card-center .cats,
+  #wildlife:checked ~ .card-center .small-animals,
+  #wildlife:checked ~ .card-center .dog-cat,
+  #wildlife:checked ~ .card-center .dog-cat-vet,
+  #wildlife:checked ~ .card-center .dog-cat-vet-small,
+  #wildlife:checked ~ .card-center .dog-cat-small,
+  #wildlife:checked ~ .card-center .dog-vet,
+  #wildlife:checked ~ .card-center .cat-vet,
+  #wildlife:checked ~ .card-center .small-vet,
+  /* Small animals check */
+  #vet-advice:checked ~ .card-center .dogs,
+  #vet-advice:checked ~ .card-center .cats,
+  #vet-advice:checked ~ .card-center .small-animals,
+  #vet-advice:checked ~ .card-center .wildlife,
+  #vet-advice:checked ~ .card-center .dog-cat,
+  #vet-advice:checked ~ .card-center .dog-cat-small,
+  #vet-advice:checked ~ .card-center .dog-cat-wild,
+  #vet-advice:checked ~ .card-center .small-wild,
+  #vet-advice:checked ~ .card-center .all-but-vet  {
+    width:0;
+    height:0;
+    padding:0;
+    margin:0;
+    opacity:0;
+    min-width:0;
+  }
+  
+  /* ---------  FETCH BLOG FILTER FUNCTION - END ---------- */
+  
+  
+  
+  /* ---------  FETCH BLOG GENERIC   ---------- */
+  
+  .fetchBlog h2 {
+    color: rgb(64, 64, 64);
+  }
+  .fetchBlog p {
+    max-width: 100%;
+    font-size: 16px;
+  }
+  .fetchBlog .list-number {
+    color: #7d513c;
+    float: left;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-right: 14px;
+  }
+  
+  .fetchBlog .question {
+    font-weight: 600;
+  }
+  .sup {
+    font-size: 10px;
+    vertical-align: super;
+  }
+  
+  /* first of type */
+  .blog-ref {
+    font-size: 13px !important;
+    padding: 20px 0 5px !important; 
+  }
+  /* all but first of type*/
+  .blog-ref ~ .blog-ref {
+    font-size: 13px !important;
+    padding: 5px 0 !important; 
+  }
+  /* Info bar under blog header */
+  .please-note {
+      max-width: 100%;
+      text-align: center;
+      background: #db82b0;
+      color: #fff;
+      padding: 8px 18px;
+      font-weight: 600;
+      margin: 0;
+  }
+  .please-note a {
+    color: #fff;
+  }
+  h2 a{
+    color: #687d33;
+  }
+  
+  /* Read more drop down disclaimer  */
+  .read-more-state {
+    display: none;
+  }
+  
+  .read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+  }
+  
+  .read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+  }
+  
+  .read-more-state ~ .read-more-wrap .read-more-trigger:before {
+    content: 'Read More';
+  }
+  
+  .read-more-state:checked ~ .read-more-wrap .read-more-trigger:before {
+    content: 'Close';
+  }
+  
+  .read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 .5em;
+    color: #ffffff;
+    background: #333031;
+    font-size: .9em;
+    line-height: 2;
+   /* border: 1px solid #ddd;
+    border-radius: .25em;*/
+  }
+  /* ---------  FETCH BLOG - TEMPLATE 1  ---------- */
+  
+  .mainBannerT1 {
+    height:430px;
+    background-color:#333333;
+    padding-left:0px !important;
+    z-index:0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .mainBannerT1 .headerImg{
+    width: 100%;
+    max-width: 2560px;
+    margin: 0 auto;
+    min-width: 2560px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .scaleImageT1 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 950px) and (min-width: 415px) {
+    .positionShift {
+      background-position:-145px;
+    }
+  }
+  @media (max-width: 414px) {
+    .positionShift {
+      background-position:-500px;
+    }
+  }
+  
+  .topRightImgNoneT3 {
+    width: 280px;
+    height: 378px;
+    display: inline-block;
+    margin-top: 26px;
+    float: right;
+    background-color: #ffffff;
+    z-index: 50;
+    border: 4px solid white;
+  }
+  @media (max-width: 950px) {
+    .topRightImgNoneT3 {
+      display:none;
+    }
+  }
+  
+  .introHeadOuterT3 {
+    width: 380px;
+    float: left;
+    display: inline-block;
+    text-align: left;
+  }
+  @media (max-width: 570px) and (min-width: 415px) {
+    .introHeadOuterT3 {
+      width:300px;
+    }
+  }
+  @media (max-width: 414px) {
+    .introHeadOuterT3 {
+      width:auto;
+    }
+  }
+  .introHeadT1 {
+    height: 430px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    z-index: 3;
+    position: relative;
+  }
+  .section {
+    font-size:16px;
+    font-family:"Trade Gothic v2", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    float:left;
+    text-transform: uppercase;
+    display:block;
+    color:#333031;
+  }
+  .sectionLine {
+    border-top: 2px solid #DF9BA1;
+    width:50px;
+    display:block;
+  }
+  .minRead1 {
+    width:40px;
+    height:60px;
+    float:right;
+    // background-image:url(/shop/5/standalone/images/reads.png);
+    background-position:0%;
+  }
+  
+  .introHeadMainCopy {
+    padding-top:90px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family:"Trade Gothic v2", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size:18px;
+    color:#333031;
+    font-weight: 600;
+  }
+  @media (max-width: 750px) {
+    .introHeadMainCopy {
+      padding-top:65px;
+    }
+  }
+  
+  .introHeadMainCopy h4 {
+    font-size: 44px;
+    text-transform: uppercase;
+    font-weight: 600;  
+    color:#333031;
+  }
+  
+  .mainBodyT1 {
+    min-height: 430px;
+    margin:auto;
+    margin-top:30px;
+    padding:0 !important;
+  }
+  @media (max-width: 1200px) and (min-width: 751px) {
+    .mainBodyT1 {
+      padding:0 0 0 15px !important;
+    }
+  }
+  @media (max-width: 750px) {
+    .mainBodyT1 {
+      padding:0 15px 0 15px !important;
+    }
+  }
+  
+  /* Section for image of editor in insight */
+  .editorInsightImage {    
+    float: right;
+    clear: right;
+    padding: 0 0 35px 35px;
+  }
+  .editorInsightImage img {    
+    width: 100px;
+    height: 125px;
+  }
+  
+  .editorInsightName {
+    color: rgb(51, 48, 49);
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    border-bottom: 1px solid #333031;
+  }
+  /* Section for image of editor in insight : END */
+  
+  .fetchEdit {
+    width:100%;
+    text-align:center;
+    font-size:35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family:"Trade Gothic v2", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    margin-bottom:30px;
+    line-height:48px;
+    border-top:1px dashed #cdcdcd;
+    padding-top:30px;
+  }
+  
+  /* ---------- Video for Edit ---------- */
+  .videoContainer {
+    position: relative;
+    width: 100%;
+    min-height: 440px;
+  }
+  
+  .videoBox {
+    width: 100%;
+  }
+  
+  .videoProductpage {
+    margin-bottom: 20px;
+    margin: auto;
+  }
+  
+  @media (max-width:700px) {
+    .videoContainer {
+      padding: 0 10px;
+    }
+  }
+  
+  @media (min-width: 676px) {
+    .videoProductpage {
+      right: 0;
+      width: 100%;
+      max-height: 375px;
+    }
+  }
+  /* ---------- /Video for Edit ---------- */
+  
+  @media (max-width: 750px) and (min-width: 415px) {
+    .miniTabT3 {
+      padding-left:15px !important;
+      padding-right:15px !important; 
+    }
+  }
+  @media (max-width: 414px) {
+    .miniTabT3 {
+      padding-left:15px !important;
+      padding-right:15px !important; 
+    }
+  }
+  .secondaryImgT3 {
+    width:100%;
+    height:auto;
+    z-index:2;
+    margin-top:65px;
+    margin-bottom: -6px;
+  }
+  @media (max-width: 950px) {
+    .secondaryImgT3 {
+      width:100%;
+      height: auto;
+      margin-top:20px;
+    }
+  }
+  .pullQuoteT3 {
+    width: 100%;
+    display: block;
+    font-family:"Trade Gothic v2", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 40px;
+    padding: 20px;
+    color: #333333;
+    font-weight: 600;
+    border-top: 2px solid rgb(61, 106, 41);
+    border-bottom: 2px solid rgb(61, 106, 41);
+  }
+  
+  .fetchBlog ul {
+    margin: 0 0 0 0;
+  }
+  
+  .fetchBlog li {    
+    font-size: 16px;
+    font-family: "Trade Gothic v2", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    list-style: square outside none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10px;
+  }
+  /* ---------  FETCH BLOG - TEMPLATE 1 END ---------- */
+  
+  
+  
+  /* ---------  FETCH BLOG - TEMPLATE 2 ---------- */
+  
+  .topRightImg {
+    width:300px;
+    height:420px;
+    position: absolute;
+    right:11%;
+    top:100px;
+    background-color:#999999;
+    z-index:2;
+    border:14px solid white;
+    overflow:hidden;
+  }
+  @media (max-width: 800px) and (min-width: 561px) {
+    .topRightImg {
+      right:4%;
+      top:5px;
+      width:274px;
+    }
+  }
+  @media (max-width: 560px) {
+    .topRightImg {
+      width:110px;
+      height:150px;
+      right:0;
+      bottom:-30px;
+      border:6px solid white;
+      top:inherit;
+    }
+  }
+  
+  .introHeadLeft {
+    width:12.5%;
+    float:left;
+    height:inherit;
+  }
+  @media (max-width: 800px) and (min-width: 581px) {
+  .introHeadLeft {
+    display:none;
+      }
+  }
+  @media (max-width: 750px) {
+    .mobRemove {
+      display:none;
+    }
+  }
+  
+  .introHeadOuterT1 {
+    width:380px;
+    float:left;
+  }
+  @media (max-width: 750px) and (min-width: 567px) {
+    .introHeadOuterT1 {
+      width:50%;
+    }
+  }
+  @media (max-width: 567px) {
+    .introHeadOuterT1 {
+      width:100%;
+    }
+  }
+  
+  .introBlockT2 {
+    width:100%;
+    margin-bottom:30px;
+  }
+  
+  .mainBodySectionT2 {
+    margin:0;
+    border-top:1px solid #cdcdcd;
+  }
+  
+  .productBlock {
+    width: 100%;
+    padding: 0 20% !important;
+    height: auto;
+    background-color: #ffffff;
+    float: left;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    min-height: 356px
+  }
+  .productBlockNew {
+      width:100%;
+      height:356px;
+      background-color:#ffffff;
+      float:left;
+      text-align:center;
+      margin-bottom:20px;
+      overflow: hidden;
+      padding: 10px;
+  }
+  .productBlockNew img {
+      width:100%;
+      height: auto;
+  }
+  
+  @media screen and (min-width: 560px){
+  .productBlockNew {
+      width:100%;
+      margin-left:0;
+      display: inline-table;
+  }
+      
+  }
+  
+  @media screen and (min-width: 800px){
+  .productBlockNew {
+      width:20%;
+      margin-left:0;
+      display: inline-table;
+  }
+      
+  }
+  
+  @media (max-width: 580px) {
+  .productBlockNew {
+      width:100%;
+  }
+  }
+  @media screen and (min-width: 561px) {
+    .productBlock {
+      width: 20%;
+      margin-left: 22%;
+      padding: 0 !important; 
+    }
+      
+  }
+  
+  
+  @media screen and (min-width: 801px) {
+    .productBlock {
+      width: 15%;
+      margin: 0 2.5%;
+    }
+  }
+  
+  /*.productBlock {
+    width:20%;
+    height:356px;
+    background-color:#ffffff;
+    float:left;
+    text-align:center;
+    margin-bottom:20px;
+    padding: 0 15px;
+  }
+  @media (max-width: 800px) and (min-width: 601px) {
+    .productBlock {
+      width:30%;
+      margin-left:15%;
+    }
+  }
+  @media (max-width: 600px) and (min-width: 561px) {
+    .productBlock {
+      width:25%;
+      margin-left:15%;
+    }
+  }
+  @media (max-width: 560px) {
+    .productBlock {
+      width:30%;
+      margin-left:auto;
+      margin-right: auto;
+    }
+  }*/
+  
+  .productEditT2 {
+    width:29%;
+    background-repeat:no-repeat;
+    background-position:top left;
+    background-color: #f5f5f5;
+    height:356px;
+    float:left;
+    text-align:center;
+    margin-bottom:20px;
+    padding:40px 20px;
+    font-size:24px;
+    font-family: "Trade Gothic", Helvetica, Arial, sans-serif;
+    line-height:24px;
+  }
+  .productEditT2New {
+    width:29%;
+    background-repeat:no-repeat;
+    background-position:top left;
+    background-color: #f5f5f5;
+    height:356px;
+    float:left;
+    text-align:center;
+    margin-bottom:20px;
+    padding:40px 20px;
+    font-size:24px;
+    font-family: "Trade Gothic", Helvetica, Arial, sans-serif;
+    line-height:24px;
+  }
+  @media (max-width: 800px) and (min-width: 601px) {
+    .productEditT2 {
+      width:40%;
+    }
+    .productEditT2New {
+      width:100%;
+    }
+  }
+  @media (max-width: 600px) and (min-width: 561px) {
+    .productEditT2 {
+      width:45%;
+    }
+    .productEditT2New {
+      width:100%;
+    }
+  }
+  @media (max-width: 560px) {
+    .productEditT2 {
+    width:100%;
+    margin-right:0;
+    padding:40px 20px 20px 20px;
+    font-size:24px;
+    line-height:24px;
+    height:inherit;
+    }
+    .productEditT2New {
+    width:100%;
+    margin-right:0;
+    padding:40px 20px 20px 20px;
+    font-size:24px;
+    line-height:24px;
+    height:inherit;
+    }
+  }
+  
+  /* ---------  FETCH BLOG - TEMPLATE 2 END ---------- */
+  
+  /* ---------  FETCH BLOG - TEMPLATE 3 ---------- */
+  
+  #block1 {
+  }
+  #block2 {
+  }
+  #block2mob {
+  }
+  #block3 {
+  }
+  #block4 {
+  }
+
+  
+  .minRead3 {
+    width:40px;
+    height:60px;
+    float:right;
+    // background-image:url(/shop/5/standalone/images/reads.png);
+    background-position:50%;
+  }
+  .introBlockT1 {
+    padding-bottom:20px;
+  }
+  .blockArea1 {
+    width:30%;
+    height:34px;
+    background-color:#333031;
+    float:left;
+    margin:0 1.5% 15px 1.5%;
+    font-family:Arimo, Helvetica, Arial, sans-serif;
+    font-size:18px;
+    font-weight:bold;
+    text-align:center;
+    color:#ffffff;
+    padding-top:6px;
+  }
+    .blockArea2 {
+    width:15%;
+    height:34px;
+    background-color:#333031;
+    float:left;
+    margin:0 0 30px 0;
+    font-family:Arimo, Helvetica, Arial, sans-serif;
+    font-size:15px;
+    font-weight:bold;
+    text-align:center;
+    color:#ffffff;
+    padding-top:6px;
+  }
+  .blockArea3 {
+    width:22%;
+    height:34px;
+    background-color:#333031;
+    float:left;
+    margin:0 1.5% 15px 1.5%;
+    font-family:Arimo, Helvetica, Arial, sans-serif;
+    font-size:18px;
+    font-weight:bold;
+    text-align:center;
+    color:#ffffff;
+    padding-top:6px;
+  }
+  @media (max-width: 750px) {
+    .blockArea1 {
+      display:none;
+    }
+    .blockArea3 {
+      display:none;
+    }
+    .blockArea1Mob {
+      width:100%;
+      height:34px;
+      background-color:#333031;
+      float:left;
+      margin:0 1.5% 15px 1.5%;
+      font-family:Arimo, Helvetica, Arial, sans-serif;
+      font-size:18px;
+      font-weight:bold;
+      text-align:center;
+      color:#ffffff;
+      padding-top:6px;
+    }
+  }
+  @media (min-width: 751px) {
+    .blockArea1Mob {
+      display:none;
+    }
+  }
+  
+  .blockSpacer {
+    width:5%;
+    float:left;
+    height:32px;
+  }
+    .blockSpacer2 {
+    width:2%;
+    float:left;
+    height:32px;
+  }
+  @media (max-width: 750px) {
+    .blockSpacer {
+      display: none;
+    }
+  }
+   
+  .blockSpacerMob {
+    width:5%;
+    float:left;
+    height:32px;
+  }
+  @media (min-width: 751px) {
+    .blockSpacerMob {
+      display:none;
+    }
+  }
+  
+  .sectionCopyT1 {
+    width:50%;
+    /*-- float:left; --*/
+    display:inline-block;
+    padding:0 2.5% 2.5%;
+    text-align:left;
+    vertical-align:top
+  }
+  @media (max-width: 750px) {
+    .sectionCopyT1 {
+      width:100%;
+      padding:2.5% 0 2.5% 0;
+    }
+  }
+  
+  .sectionCopyT1 h3 {
+    padding-top: 0;
+  }
+  
+  .sectionImgT1 {
+    width:49%;
+    min-height:100px;
+    /*-- float:left; --*/
+    display:inline-block;
+    overflow:hidden;
+    text-align:center;
+  }
+  @media (max-width: 750px) {
+    .sectionImgT1 {
+      width:100%;
+      height: auto;
+      text-align:center;
+    }
+  }
+  
+  /* ---------  FETCH BLOG - TEMPLATE 3 END ---------- */
+  
+  /* ---------  FETCH BLOG - TEMPLATE 4 ---------- */
+  
+  .topCenterImgT4 {    
+    width: 420px;
+    height: 396px;
+    display: inline-block;
+    margin: 160px auto 0;
+    background-color: rgb(153, 153, 153);
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    border: 4px solid white;
+  }
+  @media (max-width: 993px) and (min-width: 768px) {
+    .topCenterImgT4 {
+      width: 340px;
+      height: 321px;
+      margin: 53px auto 0;
+      position: inherit;
+      z-index: 3;
+      border: 4px solid white;
+    }
+  }
+  @media (max-width: 767px) {
+    .topCenterImgT4 {
+      display: none;
+    }
+  }
+  
+  .padTop150-60 {
+    padding-top: 150px;
+  }
+  @media (max-width: 993px) {
+    .padTop150-60 {
+      padding-top: 60px;
+    }
+  }
+  
+  .mainBodyT4 {
+    min-height: 430px;
+    margin:auto;
+    padding:0 !important;
+  }
+  @media (max-width: 1200px) and (min-width: 751px) {
+    .mainBodyT4 {
+      padding:0 0 0 15px !important;
+    }
+  }
+  @media (max-width: 750px) {
+    .mainBodyT4 {
+      padding:0 15px 0 15px !important;
+    }
+  }
+  .mainBodyT4 h2 {
+    padding-top: 0;
+  }
+  @media (max-width: 993px) and (min-width: 415px) {
+    .txtCenterT4 {
+      text-align: center;
+    }
+  }
+  
+  .sectionImgT4 {
+    width: 70%;
+    min-height: 100px;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto 0;
+  }
+  @media (max-width: 993px) {
+    .sectionImgT4 {
+      width: 100%
+    }
+  }
+  
+  /* ---------  FETCH BLOG - TEMPLATE 4 END ---------- */
+  
+  /* ---------  FETCH BLOG - TEMPLATE 5 ---------- */
+  
+  .skuWrap {
+      margin-right: -6px !important;
+  }
+  
+  .featuredProd {
+      border-right: 1px solid rgb(51, 48, 49);
+      height: 430px;
+      padding: 100px 40px 0 20px;
+      text-align: left;
+      font-family: Arimo, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      margin-bottom: 20px;
+      background-image:url(/shop/5/standalone/hub/sos/images/featuredproduct.gif);
+      background-repeat: no-repeat;
+      background-size: 85%;
+      background-position: top 30px left 20px;
+  }
+  @media (max-width: 950px) {
+    .featuredProd {
+      background-size: 75%;
+      height: 340px;
+      padding: 100px 20px 0 20px;
+    }
+  }
+  @media (max-width: 750px) {
+    .featuredProd {
+      margin-right: 33% !important;
+    }
+  }
+  
+  /* ---------  FETCH BLOG - TEMPLATE 5 END ---------- */
+  
+  /* ---------  FETCH BLOG - TEMPLATE 6 Start PRO/CON---------- */
+  
+  #pro-cons .bl-nav-btns {
+    display: flex;
+  }
+  
+  #pro-cons .bl-nav-btns .btn-1,
+  #pro-cons .btn-2 {
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    background: black;
+    padding: 15px 0px;
+    margin: 0 3px;
+    color: white;
+    font-family: Arimo, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0.6;
+  }
+  
+  #pro-cons .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 30px;
+  }
+  
+  #pro-cons .main-container .box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #pro-cons .main-container h3 {
+    clear: unset;
+  }
+  
+  #pro-cons .main-container .box img {
+    width: 100%;
+    padding: 10px 0px;
+  }
+  
+  #pro-cons .main-container .box p {
+    width: 100%;
+    padding: 10px 0px;
+    max-width: unset;
+  }
+  
+  #pro-cons .line-seperator {
+    border-bottom: 1px solid black;
+    width: 100%;
+  }
+  
+  #pro-cons .content-title,
+  #pro-cons .content-img,
+  #pro-cons .content-copy {
+    width: 100%;
+  }
+  
+  #pro-cons .fop-header{
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+  
+  #pro-cons .fop-container {
+    display: flex;
+    width: 100%;
+  }
+  
+  #pro-cons .fop-container .product-container {
+    width: 50%;
+    overflow: hidden;
+  }
+  
+  
+  
+  @media only screen and (min-width: 480px) {
+    #pro-cons .main-container .box {
+        display: unset;
+    }
+  
+  
+  
+  }
+  
+  @media only screen and (min-width: 768px) {
+    #pro-cons .main-container {
+        flex-wrap: nowrap;
+    }
+  
+    #pro-cons .bl-nav-btns {
+        display: none;
+    }
+  
+    #pro-cons .line-seperator {
+      border-bottom: unset;
+      border-left: 1px solid black;
+      margin: 0px 50px;
+      width: 0%;
+    }
+  }
+  
+  
+  
+  
+  /* ---------  FETCH BLOG - TEMPLATE 6 END ---------- */
+  
+  
+  

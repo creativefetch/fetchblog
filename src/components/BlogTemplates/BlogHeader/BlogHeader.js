@@ -5,17 +5,16 @@ import React from 'react'
 //     categories = DOGS CATS ETC.
 
 const BlogHeader = (props) => {
-   console.log(props)
     return (
 
         <div className="grid__col grid__col--3-of-3 mainBannerT1 positionShift">
             <div className="container no-background">
                 
                 {/* Private Contentful image */}
-                <img className="headerImg" src={`https:${props.blogJSON.headerImage.fields.file.url}`} alt="Header" />
+                {/* <img className="headerImg" src={`https:${props.blogJSON.headerImage.fields.file.url}`} alt="Header" /> */}
 
                 {/* git Stored image */}
-                {/* <img className="headerImg" src={`/shop/2/standalone/hub/images/${props.blogJSON.headerImage}.jpg`} alt="Header" /> */}
+                <img className="headerImg" src={`/shop/2/standalone/hub/images/${props.blogJSON.headerImage ? props.blogJSON.headerImage :null}.jpg`} alt="Header" />
 
                 {/* Ocado contentful image */}
                 {/* <img className="headerImg" src={`{{${props.blogJSON.headerImage}}}`} alt="Header" /> */}
@@ -25,12 +24,12 @@ const BlogHeader = (props) => {
 
                             <div className="section">
                                 {props.blogJSON.categories.map(element => {
-                                    return `${element} |`
+                                    return `${element} | `
                                 })}
 					        </div>
 
                             <div className="introHeadMainCopy">
-                                <h4>{props.blogJSON.blogTitle}</h4>
+                                <h4>{props.blogJSON.blogTitle ? props.blogJSON.blogTitle : null}</h4>
                             </div>
 
                         </div>

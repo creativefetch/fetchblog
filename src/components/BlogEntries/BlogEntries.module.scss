@@ -1,5 +1,19 @@
 @import "../../BaseStyles/colors";
 
 .BlogEntriesContainer {
-    
+    max-width: 767px;
+    margin: 2rem auto;
+}
+
+.BlogEntriesContainer h2 {
+    font-size: 2rem;
+}
+
+.BlogEntriesContainer button {
+    border: none;
+    font-size: 1.5rem;
+    margin: 1rem 0em;
+    background: #9AC621;
+    padding: 0.5em 1em;
+    color: white;
 }
