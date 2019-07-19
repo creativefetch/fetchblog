@@ -14,7 +14,7 @@ const BlogHeader = (props) => {
                 {/* <img className="headerImg" src={`https:${props.blogJSON.headerImage.fields.file.url}`} alt="Header" /> */}
 
                 {/* git Stored image */}
-                <img className="headerImg" src={`/shop/2/standalone/hub/images/${props.blogJSON.headerImage ? props.blogJSON.headerImage :null}.jpg`} alt="Header" />
+                <img className="headerImg" src={`/shop/2/standalone/hub/images/${props.headerImage ? props.headerImage :null}.jpg`} alt="Header" />
 
                 {/* Ocado contentful image */}
                 {/* <img className="headerImg" src={`{{${props.blogJSON.headerImage}}}`} alt="Header" /> */}
@@ -23,13 +23,13 @@ const BlogHeader = (props) => {
                         <div className="introHeadT1">
 
                             <div className="section">
-                                {props.blogJSON.categories.map(element => {
+                                {props.categories.map(element => {
                                     return `${element} | `
                                 })}
 					        </div>
 
                             <div className="introHeadMainCopy">
-                                <h4>{props.blogJSON.blogTitle ? props.blogJSON.blogTitle : null}</h4>
+                                <h4>{props.blogTitle ? props.blogTitle : null}</h4>
                             </div>
 
                         </div>

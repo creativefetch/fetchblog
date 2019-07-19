@@ -1,7 +1,7 @@
 import React from 'react'
 const ReactMarkdown = require('react-markdown/with-html')
 
-const Template1Content = (props) => {
+const MainContent = (props) => {
 
         return (
 
@@ -12,4 +12,4 @@ const Template1Content = (props) => {
     }
 
 
-export default Template1Content
+export default MainContent

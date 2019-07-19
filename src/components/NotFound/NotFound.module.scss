@@ -1,0 +1,21 @@
+@import "../../BaseStyles/colors";
+
+.NotFound {
+    text-align: center;
+}
+
+img.logo {
+    width: 20%;
+    min-width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+button {
+    border: none;
+    background-color: $primaryLight;
+    color: white;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+}
