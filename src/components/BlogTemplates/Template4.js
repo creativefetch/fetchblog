@@ -7,8 +7,8 @@ import FetchPicks from "../BlogTemplates/FopBlocks/FetchPicks"
 import "../../BaseStyles/static.scss"
 import Disclaimer from './Disclaimer/Disclaimer';
 
-class Template4 extends React.Component {
-  render() {
+const Template4 = (props) => {
+    const blogJSON = props.blogJson.fields
     return (
       <div>
         <BlogHeader
@@ -47,6 +47,5 @@ class Template4 extends React.Component {
       </div>
     );
   }
-}
 
 export default Template4;
