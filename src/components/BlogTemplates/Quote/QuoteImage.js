@@ -1,14 +1,17 @@
 import React from 'react';
 
 const QuoteImage = (props) => {
-    return (
+
+    if(props.Image) { return(
         <div className="secondaryImgT3">
             <img 
                 className="scaleImageT1" 
-                src={`/shop/2/standalone/hub/images/${props.Image ? props.Image : null}.jpg`} 
+                src={`/shop/2/standalone/hub/images/${props.Image}.jpg`} 
                 alt="" />
         </div>
     )
+    }
 
 }
+
 export default QuoteImage
