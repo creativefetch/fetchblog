@@ -10,7 +10,7 @@ import Disclaimer from './Disclaimer/Disclaimer';
 const Template4 = (props) => {
     const blogJSON = props.blogJson.fields
     return (
-      <div>
+      <div id="TheFetchBlog">
         <BlogHeader
           blogTitle={blogJSON.blogTitle}
           headerImage={blogJSON.headerImage}
@@ -22,9 +22,9 @@ const Template4 = (props) => {
           <Disclaimer Disclaimer={blogJSON.disclaimer} />
         ) : null}
 
-        <div class="container fetchBlog">
-          <div class="grid">
-            <div class="grid__col grid__col--s-4-of-4 grid__col--t-3-of-3 grid__col--m-3-of-5 grid__col--2-of-3 mainBodyT1">
+        <div className="container fetchBlog">
+          <div className="grid">
+            <div className="grid__col grid__col--s-4-of-4 grid__col--t-3-of-3 grid__col--m-3-of-5 grid__col--2-of-3 mainBodyT1 mainBodyT4">
               {blogJSON.introductionCopy ? (
                 <BlogIntroduction Intro={blogJSON.introductionCopy} />
               ) : null}
