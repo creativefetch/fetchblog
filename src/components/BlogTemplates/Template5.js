@@ -22,65 +22,67 @@ const Template5 = props => {
         <Disclaimer Disclaimer={blogJSON.disclaimer} />
       ) : null}
 
-      <div class="container fetchBlog">
+      <div className="container fetchBlog">
         {blogJSON.introductionCopy ? (
           <BlogIntroduction Intro={blogJSON.introductionCopy} />
         ) : null}
 
         <div id="pro-cons">
-          <div class="bl-nav-btns">
-            <a class="btn-1" href="#st-box1">
-              Pet Sitter
+          <div className="bl-nav-btns">
+            <a className="btn-1" href="#st-box1">
+              {blogJSON.button1}
             </a>
-            <a class="btn-2" href="#st-box2">
-              Dog Boarding
+            <a className="btn-2" href="#st-box2">
+            {blogJSON.button2}
             </a>
           </div>
 
-          <div class="main-container">
+          <div className="main-container">
             <a id="box1" />
-            <div class="box">
-              <div class="content-title">
-                <h3>What are the benefits of a dog harness?</h3>
+            <div className="box">
+              <div className="content-title">
+                <h3>{blogJSON.block1Title}</h3>
               </div>
 
-              <div class="content-copy">
-                {blogJSON.blogMainContent ? (
-                  <MainContent Content={blogJSON.blogMainContent} />
+              <div className="content-copy">
+                {blogJSON.block1MainContent ? (
+                  <MainContent Content={blogJSON.block1MainContent} />
                 ) : null}
               </div>
 
-              <h3 class="fop-header">BEST DOG HARNESSES</h3>
+              <h3 className="fop-header">{blogJSON.block1FopTitle}</h3>
 
-              <div class="fop-container">
-                <div class="product-container">
-                  <fop skus="440935011" />
+              <div className="fop-container">
+                <div className="product-container">
+                  <fop skus={blogJSON.block1Fop1} />
                 </div>
-                <div class="product-container">
-                  <fop skus="402073011" />
+                <div className="product-container">
+                  <fop skus={blogJSON.block1Fop2} />
                 </div>
               </div>
             </div>
 
-            <div class="line-seperator" />
+            <div className="line-seperator" />
 
             <a id="box2" />
-            <div class="box">
-              <div class="content-title">
-                <h3>What are the benefits of a dog collar?</h3>
+            <div className="box">
+              <div className="content-title">
+                <h3>{blogJSON.block2Title}</h3>
               </div>
 
-              <div class="content-copy">
-                {blogJSON.blogMainContent ? (
-                  <MainContent Content={blogJSON.blogMainContent} />
+              <div className="content-copy">
+                {blogJSON.block2MainContent ? (
+                  <MainContent Content={blogJSON.block2MainContent} />
                 ) : null}
               </div>
-              <div class="fop-container">
-                <div class="product-container">
-                  <fop skus="440935011" />
+
+              <h3 className="fop-header">{blogJSON.block2FopTitle}</h3>
+              <div className="fop-container">
+                <div className="product-container">
+                  <fop skus={blogJSON.block1Fop1} />
                 </div>
-                <div class="product-container">
-                  <fop skus="402073011" />
+                <div className="product-container">
+                  <fop skus={blogJSON.block1Fop1} />
                 </div>
               </div>
             </div>
