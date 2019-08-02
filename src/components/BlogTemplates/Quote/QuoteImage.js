@@ -1,17 +1,26 @@
-import React from 'react';
+import React from "react";
 
-const QuoteImage = (props) => {
+const QuoteImage = props => {
+    console.log(props)
+  const isimageSupplied = () => (
+    <img
+      className="scaleImageT1"
+      src={`../images/${props.Image}.jpg`}
+      alt=""
+    />
+  );
 
-  const isimageSupplied = () => (<img className="scaleImageT1" src={`/shop/2/standalone/hub/images/${props.Image}.jpg`} alt="" />) 
+  return (
+    <div className="secondaryImgT3">
+      {props.Image ? (
+        <img
+          className="scaleImageT1"
+          src={`../images/${props.Image}.jpg`}
+          alt={props.Image}
+        />
+      ) : null}
+    </div>
+  );
+};
 
-        return(
-        <div className="secondaryImgT3">
-           
-        {props.Image ? isimageSupplied:null}
-
-        </div>)
-    
-    }
-
-
-export default QuoteImage
+export default QuoteImage;

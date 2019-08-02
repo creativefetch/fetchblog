@@ -9,12 +9,9 @@ const BlogHeader = (props) => {
 
         <div className="grid__col grid__col--3-of-3 mainBannerT1 positionShift">
             <div className="container no-background">
-                
-                {/* Private Contentful image */}
-                {/* <img className="headerImg" src={`https:${props.blogJSON.headerImage.fields.file.url}`} alt="Header" /> */}
 
-                {/* git Stored image */}
-                <img className="headerImg" src={`/shop/2/standalone/hub/images/${props.headerImage ? props.headerImage :null}.jpg`} alt="Header" />
+                {/* git Stored image just takes the image name*/}
+                <img className="headerImg" src={`../images/${props.headerImage ? props.headerImage :null}.jpg`} alt={props.headerImage} />
 
                 {/* Ocado contentful image */}
                 {/* <img className="headerImg" src={`{{${props.blogJSON.headerImage}}}`} alt="Header" /> */}
