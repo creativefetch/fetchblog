@@ -11,7 +11,7 @@ import Disclaimer from './Disclaimer/Disclaimer';
 const Template1 = (props) => {
     const blogJSON = props.blogJson.fields
         return (
-            <div>
+            <div id="TheFetchBlog">
                 <BlogHeader 
                     blogTitle={blogJSON.blogTitle} 
                     headerImage={blogJSON.headerImage} 

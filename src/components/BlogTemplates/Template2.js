@@ -9,10 +9,8 @@ import ProductEdit from "./Template2Components/ProductEdit";
 const Template2 = (props) => {
     
     const blogJSON = props.blogJson.fields
-
-    console.log(blogJSON)
     return (
-        <div>
+        <div id="TheFetchBlog">
             <BlogHeader
                 blogTitle={blogJSON.blogTitle}
                 headerImage={blogJSON.headerImage}

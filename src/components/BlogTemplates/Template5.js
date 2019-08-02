@@ -7,8 +7,6 @@ import Disclaimer from "./Disclaimer/Disclaimer";
 
 const Template5 = props => {
   const blogJSON = props.blogJson.fields;
-  console.log(blogJSON);
-
   return (
     <div id="TheFetchBlog">
       <BlogHeader

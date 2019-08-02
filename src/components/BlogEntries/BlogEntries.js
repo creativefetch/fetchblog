@@ -4,8 +4,6 @@ import { Link } from "react-router-dom"
 
 const BlogEntries = (props) => {
   
-    console.log(props.blogJson)
-    
     // Generates the blog list from contentful
     const BlogList = props.blogJson.map(element => (
 
