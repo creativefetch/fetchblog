@@ -1,16 +1,6 @@
 import React from "react";
 
-const QuoteImage = props => {
-    console.log(props)
-  const isimageSupplied = () => (
-    <img
-      className="scaleImageT1"
-      src={`../images/${props.Image}.jpg`}
-      alt=""
-    />
-  );
-
-  return (
+const QuoteImage = props => (
     <div className="secondaryImgT3">
       {props.Image ? (
         <img
@@ -20,7 +10,7 @@ const QuoteImage = props => {
         />
       ) : null}
     </div>
-  );
-};
+  )
+
 
 export default QuoteImage;
