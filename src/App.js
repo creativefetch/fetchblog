@@ -18,6 +18,7 @@ class App extends React.Component {
     isEntriesLoading: true,
     allEntriesJSON: null,
   }
+  
 
   // Contentful's Client 
   client = contentful.createClient({
