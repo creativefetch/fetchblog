@@ -9,7 +9,8 @@ import Template2 from "./components/BlogTemplates/Template2";
 import Template3 from "./components/BlogTemplates/Template3";
 import Template4 from "./components/BlogTemplates/Template4";
 import Template5 from "./components/BlogTemplates/Template5";
-import NotFound from "./components/NotFound/NotFound"
+import NotFound from "./components/NotFound/NotFound";
+import LoadingPage from "./components/LoadingPage/LoadingPage";
 
 
 class App extends React.Component {
@@ -88,7 +89,7 @@ class App extends React.Component {
       );
     }
     // if the data has not arrived yet. then it keeps on loading
-    else { return "Loading....." }
+    else { return <LoadingPage/> }
   }
 }
 
