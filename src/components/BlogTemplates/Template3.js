@@ -97,7 +97,7 @@ const Template3 = (props) => {
                 /> : 
                 null}
 
-                <FetchPicks Fops={blogJSON.fetchPicksFops} />
+                {blogJSON.fetchPicksFops ? <FetchPicks Fops={blogJSON.fetchPicksFops} /> : null}
 
             </div>
           </div>
