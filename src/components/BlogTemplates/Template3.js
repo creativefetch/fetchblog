@@ -7,6 +7,7 @@ import AnchorBtns from "./Template3Components/AnchorBtns";
 import ContentRow from "./Template3Components/ContentRow";
 import ContentRowFloat from "./Template3Components/ContentRowFloat";
 import FopBlockFour from "./FopBlocks/FopBlockFour";
+import FetchPicks from "./FopBlocks/FetchPicks";
 
 const Template3 = (props) => {
     const blogJSON = props.blogJson.fields
@@ -95,6 +96,8 @@ const Template3 = (props) => {
                     FopsPicks={blogJSON.section4FopsPicks ? blogJSON.section4FopsPicks : null }
                 /> : 
                 null}
+
+                <FetchPicks Fops={blogJSON.fetchPicksFops} />
 
             </div>
           </div>
