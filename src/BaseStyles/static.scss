@@ -6224,23 +6224,7 @@ h2 a{
 
 /* ---------  FETCH BLOG - TEMPLATE 3 ---------- */
 
-#block1 {
-}
-#block2 {
-}
-#block2mob {
-}
-#block3 {
-}
-#block4 {
-}
 
-.minRead3 {
-  width:40px;
-  height:60px;
-  float:right;
-  background-position:50%;
-}
 .introBlockT1 {
   padding-bottom:20px;
 }
@@ -6310,32 +6294,31 @@ h2 a{
   }
 }
 
-.blockSpacer {
-  width:5%;
-  float:left;
-  height:32px;
+/* Flexbox Buttons */
+.anchorsBtns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px 0;
 }
-  .blockSpacer2 {
-  width:2%;
-  float:left;
-  height:32px;
+
+.anchorBtn {
+  width: 100%;
+  margin: 5px;
+  background-color: #333031;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
 }
-@media (max-width: 750px) {
-  .blockSpacer {
-    display: none;
+
+@media (min-width: 750px) {
+  .anchorsBtns {
+    flex-wrap: nowrap;
   }
 }
- 
-.blockSpacerMob {
-  width:5%;
-  float:left;
-  height:32px;
-}
-@media (min-width: 751px) {
-  .blockSpacerMob {
-    display:none;
-  }
-}
+
 
 .sectionCopyT1 {
   width:50%;
@@ -6344,12 +6327,6 @@ h2 a{
   padding:0 2.5% 2.5%;
   text-align:left;
   vertical-align:top
-}
-@media (max-width: 750px) {
-  .sectionCopyT1 {
-    width:100%;
-    padding:2.5% 0 2.5% 0;
-  }
 }
 
 .sectionCopyT1 h3 {
@@ -6365,6 +6342,11 @@ h2 a{
   text-align:center;
 }
 @media (max-width: 750px) {
+  .sectionCopyT1 {
+    width:100%;
+    padding:2.5% 0 2.5% 0;
+  }
+
   .sectionImgT1 {
     width:100%;
     height: auto;

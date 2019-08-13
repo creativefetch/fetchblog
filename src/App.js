@@ -72,6 +72,7 @@ class App extends React.Component {
 
 
   render() {
+    {console.log(this.state.allEntriesJSON)}
     // once the data has arrived. render the JSX/HTML
     if (!this.state.isEntriesLoading) {
       return (

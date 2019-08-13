@@ -41,9 +41,7 @@ const Template4 = (props) => {
           </div>
         </div>
 
-        <FetchPicks
-          Fops={blogJSON.fetchPicksFops ? blogJSON.fetchPicksFops : null}
-        />
+          {blogJSON.fetchPicksFops ? <FetchPicks Fops={blogJSON.fetchPicksFops} /> : null }
       </div>
     );
   }

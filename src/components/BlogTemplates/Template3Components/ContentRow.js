@@ -1,4 +1,5 @@
 import React from "react";
+import MainContent from "../MainContent/MainContent"
 
 const ContentRow = props => {
   console.log(props);
@@ -9,7 +10,7 @@ const ContentRow = props => {
       <div className="sectionCopyT1">
         {props.Title ? <h3>{props.Title}</h3> : null}
         &nbsp;
-        {props.Copy ? <p>{props.Copy}</p> : null}
+        {props.Copy ? <MainContent Content={props.Copy} /> : null}
       </div>
 
       {props.Image ? (

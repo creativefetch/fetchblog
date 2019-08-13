@@ -4,51 +4,27 @@ const AnchorBtns = props => {
   console.log(props);
 
   return (
-    <div>
+    <div className="anchorsBtns">
       {props.Button1 ? (
-        <a href="#st-block1" className="blockArea3">
+        <a href="#st-block1" className="anchorBtn">
           {" "}
           {props.Button1}
         </a>
       ) : null}
       {props.Button2 ? (
-        <a href="#st-block2" className="blockArea3">
+        <a href="#st-block2" className="anchorBtn">
           {props.Button2}
         </a>
       ) : null}
 
       {props.Button3 ? (
-        <a href="#st-block3" className="blockArea3">
+        <a href="#st-block3" className="anchorBtn">
           {props.Button3}
         </a>
       ) : null}
 
       {props.Button4 ? (
-        <a href="#st-block4" className="blockArea3">
-          {props.Button4}
-        </a>
-      ) : null}
-
-      {props.Button1 ? (
-        <a href="#st-block1" className="blockArea1Mob">
-          {props.Button1}
-        </a>
-      ) : null}
-
-      {props.Button2 ? (
-        <a href="#st-block2" className="blockArea1Mob">
-          {props.Button2}
-        </a>
-      ) : null}
-
-      {props.Button3 ? (
-        <a href="#st-block3" className="blockArea1Mob">
-          {props.Button3}
-        </a>
-      ) : null}
-
-      {props.Button4 ? (
-        <a href="#st-block4" className="blockArea1Mob">
+        <a href="#st-block4" className="anchorBtn">
           {props.Button4}
         </a>
       ) : null}
