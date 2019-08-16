@@ -5,14 +5,6 @@ import { Link } from "react-router-dom";
 const Header = () => {
   console.log(window.location);
 
-  //   useEffect(() => {
-  //     if (window.location.pathname == "/") {
-  //       const htmlCopyContainer = document.querySelector("#htmlCopyContainer");
-  //       console.log(htmlCopyContainer);
-  //       htmlCopyContainer.style = "display:none;"
-  //     }
-  //   });
-
   const copyBlog = () => {
     // gets the html and all its children
     try {
