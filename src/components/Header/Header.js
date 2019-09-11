@@ -45,7 +45,7 @@ const Header = () => {
       <Link to="/">{backArrow}</Link>
 
       <h1>Fetch Blog By Creative</h1>
-      <h2>Fetch Blog HTML Generator</h2>
+      <h2>HTML Generator</h2>
       <div id="htmlCopyContainer" className={Styles.htmlCopyContainer}>
         <button onClick={copyBlog} className={Styles.copyHtmlBtn}>
           Copy HTML To ClipBoard
