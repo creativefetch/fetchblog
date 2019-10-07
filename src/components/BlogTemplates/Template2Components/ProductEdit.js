@@ -1,13 +1,14 @@
 import React from 'react'
+const ReactMarkdown = require('react-markdown/with-html')
 
 const ProductBlock = (props) => {
 
     return (
         <div className="productEditT2">
             {props.title}
-            <p>
+            <ReactMarkdown>
                 {props.copy}
-            </p>
+            </ReactMarkdown>
         </div>
     )
 }
