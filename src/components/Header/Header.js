@@ -44,9 +44,9 @@ const Header = () => {
       <Link to="/">{backArrow}</Link>
 
       <h1>Fetch Blog By Creative</h1>
-      <a title="Vote for Me Now KASSI!!!. You Know you Want to!! Make America Great again!!!!!!" href='https://secure.donaldjtrump.com/donate/?utm_medium=ad&utm_source=dp_googlesearch&utm_campaign=20190715_na_trumpgenerickws_djt_djtfund_ocpmypur_cm_audience0134_na_copy01380_us_b_18-99_gsn_all_na_lp0309_fund_conversion_search_na_na_na&utm_content=fun&gclid=Cj0KCQiApaXxBRDNARIsAGFdaB8xmM6x-W1H-zRCmY7qi3Olc7ua2tQIxxK0nUnRSZURupCVqdPmMywaAhKeEALw_wcB'>
+      {/* <a title="Vote for Me Now KASSI!!!. You Know you Want to!! Make America Great again!!!!!!" href='https://secure.donaldjtrump.com/donate/?utm_medium=ad&utm_source=dp_googlesearch&utm_campaign=20190715_na_trumpgenerickws_djt_djtfund_ocpmypur_cm_audience0134_na_copy01380_us_b_18-99_gsn_all_na_lp0309_fund_conversion_search_na_na_na&utm_content=fun&gclid=Cj0KCQiApaXxBRDNARIsAGFdaB8xmM6x-W1H-zRCmY7qi3Olc7ua2tQIxxK0nUnRSZURupCVqdPmMywaAhKeEALw_wcB'>
         <img  style={{height: '150px'}} src="https://cdn.theatlantic.com/assets/media/img/mt/2016/09/RTX1GZCO/lead_720_405.jpg?mod=1533691850" alt="trumpy trump"/>
-      </a>
+      </a> */}
       <h2>HTML Generator</h2>
       <div id="htmlCopyContainer" className={Styles.htmlCopyContainer}>
         <button onClick={copyBlog} className={Styles.copyHtmlBtn}>
